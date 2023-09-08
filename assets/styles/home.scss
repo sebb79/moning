@@ -1,0 +1,51 @@
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes */
+    grid-template-rows: auto auto; /* Hauteur automatique */
+    grid-column-gap: 20px; /* Espacement entre les colonnes */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 50px;
+}
+
+.div1 {
+    /* Styles pour la première colonne (contenant le texte) */
+    font-family: 'Inter', sans-serif;
+    margin-right: 40px;
+
+}
+
+.div2 {
+    margin-left: 100px;
+    /* Styles pour la deuxième colonne (contenant l'image) */
+}
+
+.content {
+    /* Styles pour le conteneur du contenu (titre, description, bouton) */
+    text-align: left; /* Alignement à gauche du contenu */
+}
+
+.slogan {
+    /* Styles pour le titre */
+    font-size: 28px; /* Taille de la police du titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+.description {
+    /* Styles pour la description */
+    font-size: 18px; /* Taille de la police de la description */
+    margin-bottom: 20px; /* Espacement en bas de la description */
+}
+
+.started-button {
+    /* Styles pour le bouton "Get started" */
+    background-color: #5835E8;
+    border-radius: 20px;
+     /* Couleur du texte en blanc */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+    & a{
+        color: #FFFFFF;
+    }
+}

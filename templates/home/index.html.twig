@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Moning{% endblock %}
+
+{% block body %}
+    <div class="parent">
+        <div class="div1">
+            <div class="container">
+                <div class="content">
+                    <div class="slogan">
+                        <h1>tracking <br />your invest</h1>
+                    </div>
+
+                    <div class="description">
+                        <h4>Commencez à suivre vos actions. Gérez efficacement votre portefeuille grâce à notre application unique, conçue pour la gestion de votre épargne, de vos investissements en actions, ETF.</h4>
+                    </div>
+
+                    <div class="started-button">
+                        <a href="#" type="button"> Get started </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="image-container">
+                <img src="{{ asset('image/data.PNG') }}" alt="Image Description">
+            </div>
+        </div>
+    </div>
+{% endblock %}

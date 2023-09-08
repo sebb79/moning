@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Marge intérieure */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    
+    /* Style du logo et du titre */
+    .logo {
+        .title {
+            font-size: 35px; /* Taille du titre */
+            font-family: 'Inter', sans-serif;
+            font-weight: bold; /* Gras */
+            color: #5835E8; /* Couleur de la police du titre */
+            margin-right: 20px; /* Espacement entre le titre et les liens */
+        }
+    }
+
+    /* Style des liens de la navbar */
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 37px; /* Espacement entre chaque lien */ 
+            a {
+                font-size: 16px; /* Taille de la police */
+                font-family: 'Inter', sans-serif;
+                color: #3B3B3B; /* Couleur de la police des liens */
+                text-decoration: none; /* Supprimer la soulignement des liens */
+                color: inherit; /* Utiliser la couleur de la police par défaut */
+                transition: color 0.2s; /* Transition en douceur de la couleur au survol */
+                &:hover {
+                    color: #5835E8; /* Couleur au survol */
+                }
+            }
+    }
+}
