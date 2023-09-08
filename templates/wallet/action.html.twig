@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ActionController!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('action') }}
+{% endblock %}
+
+{% block body %}
+
+    {% for action in actions %}
+
+    <div class="blog_post">
+        <div class="img_pod">
+            <img src="https://pbs.twimg.com/profile_images/890901007387025408/oztASP4n.jpg" alt="random image">
+        </div>
+        <div class="container_copy">
+            <h3>{{ action.nom }}</h3>
+            <h1>{{ action.prix }} €</h1>
+            <p>{{ action.dateAchat | date('d/m/Y')}} </p>
+            <a class="btn_primary" href='' target="_blank">Voir</a>
+        </div>
+
+    </div>
+    {% endfor %}
+{% endblock %}
